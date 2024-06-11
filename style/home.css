@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #2c3e50;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --border-color: #ccc;
+  --white: #fff;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+/* Search Container */
+.search {
+  max-width: 600px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+#normalUrl {
+  flex: 1;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px 0 0 4px;
+}
+
+#generate {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+/* History Container */
+#history {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  height: 800px;
+  overflow-y: scroll;
+}
+
+#history div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+#history div:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+#history a {
+  text-decoration: none;
+  color: var(--primary-color);
+  word-break: break-all;
+  font-size: 0.9rem;
+}
+
+#history div div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#history button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+/* Short URL */
+#short {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  word-break: break-all;
+  font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .search {
+    flex-direction: column;
+  }
+
+  #normalUrl {
+    border-radius: 4px 4px 0 0;
+  }
+
+  #generate {
+    border-radius: 0 0 4px 4px;
+  }
+
+}
