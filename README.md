@@ -42,10 +42,6 @@ Note: This project only includes the frontend code. The backend functionality is
 
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
 ## Acknowledgments
 
 We would like to thank the organizers of Infobrains Club for providing us with an opportunity to showcase our skills and build this project.
